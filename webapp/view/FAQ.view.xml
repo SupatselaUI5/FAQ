@@ -57,287 +57,30 @@
 						
 						
 						
-					        <IconTabFilter text="Questions and Answers" icon="sap-icon://task" iconColor="Critical" id="filter1" key="adminKey">
+					        <IconTabFilter text="Questions and Answers" icon="sap-icon://task" iconColor="Critical" id="filter1" key="adminKey" content="{/GetQuestionnaireHSet}">
 						
+						<List noDataText="Drop list items here" id="list1" items="{path:'/GetQuestionnaireHSet',parameters:{expand:'ProblemToSolutionNav',select:'Problem'}}">
 						
+						    <items>
 						
+<CustomListItem>
+                <Panel expandable="true" expanded="false" headerText="{Problem}">
+                  <content>
+                    <Text text="Solution To Problem"/>
+                  </content>
+                </Panel>
+              </CustomListItem>
+						    </items>
 						
-					            <content>
+						</List>
 						
 						
+					            
 						
 						
-					                <sap.ui.layout.form:Form xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0" editable="true">
 						
 						
-						
-						
-					                    <sap.ui.layout.form:formContainers>
-						
-						
-						
-						
-					                        <sap.ui.layout.form:FormContainer id="container0_copy">
-						
-						
-						
-						
-					                            <sap.ui.layout.form:formElements>
-						
-						
-						
-						
-					                                <sap.ui.layout.form:FormElement label="Q1. How and where do I apply for NPO certificate" id="element0">
-						
-						
-						
-						
-					                                    <sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                        <TextArea xmlns="sap.m" value="You can apply online at: &#10;&#10;•http://www.npo.gov.za/PublicNpo/WebApplicationCase/Register &#10;&#10;Or at: &#10; &#10;•National Department of Social Development Office&#10; HSRC Building&#10; 134 Pretorius Street&#10; Pretoria &#10;•012 312 7500 &#10;&#10;Enquiries and collection of application forms can also be made at:&#10;&#10;•Gauteng Department of Social Development Head Office 69 Commissioner Street, Johannesburg &#10;•Telephone number: 011 355 7600" rows="20" id="area0" editable="false" textAlign="Begin" valueState="Success" wrapping="Hard"/>
-						
-						
-						
-						
-					                                    </sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                </sap.ui.layout.form:FormElement>
-						
-						
-						
-						
-					                                <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Q2. Where and how do I check the status of NPO registration" id="element0_copy2">
-						
-						
-						
-						
-					                                    <sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                        <TextArea xmlns="sap.m" value="Registration status can be checked at:&#10;&#10;•http://www.npo.gov.za" rows="4" id="area0_copy" editable="false" textAlign="Begin" valueState="Success" wrapping="Hard"/>
-						
-						
-						
-						
-					                                        
-						
-						
-						
-						
-					                                    </sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                    
-						
-						
-						
-						
-					                                </sap.ui.layout.form:FormElement>
-						
-						
-						
-						
-					                                <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Q3. How long does the application process take" id="element0_copy3">
-						
-						
-						
-						
-					                                    <sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                        <TextArea xmlns="sap.m" value="After submission of forms it take up to 6 weeks for the NPO to be registered" rows="4" id="area0_copy2" editable="false" textAlign="Begin" valueState="Success" wrapping="Hard"/>
-						
-						
-						
-						
-					                                        
-						
-						
-						
-						
-					                                    </sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                    
-						
-						
-						
-						
-					                                </sap.ui.layout.form:FormElement>
-						
-						
-						
-						
-					                                <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Q4. Where and how do I register an ECD/Partial Care" id="element0_copy5">
-						
-						
-						
-						
-					                                    <sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                        <TextArea xmlns="sap.m" value="Registration of ECD is done at Regional Offices &#10;&#10;•Ekurhuleni Regional Office &#10;•Johannesburg Regional Office &#10;•Sedibeng Regional Office &#10;•Tshwane Regional Office &#10;•Westrand Regional Office &#10;&#10;For more information, you can go to our website &#10;&#10;•https://www.gauteng.gov.za/" rows="12" id="area0_copy4" editable="false" textAlign="Begin" valueState="Success" wrapping="Hard"/>
-						
-						
-						
-						
-					                                        
-						
-						
-						
-						
-					                                    </sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                    
-						
-						
-						
-						
-					                                </sap.ui.layout.form:FormElement>
-						
-						
-						
-						
-					                                <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Q5. Where do I check registration status of an ECD" id="element0_copy6">
-						
-						
-						
-						
-					                                    <sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                        <TextArea xmlns="sap.m" value="Status of ECDs can be checked at Regional Offices&#10; &#10;•Ekurhuleni Regional Office &#10;•Johannesburg Regional Office &#10;•Sedibeng Regional Office &#10;•Tshwane Regional Office &#10;•Westrand Regional Office &#10;&#10;ECD facilities that are registered are issued with the registration certificate which should be displayed" rows="12" id="area0_copy5" editable="false" textAlign="Begin" valueState="Success" wrapping="Hard"/>
-						
-						
-						
-						
-					                                        
-						
-						
-						
-						
-					                                    </sap.ui.layout.form:fields>
-						
-						
-						
-						
-					                                    
-						
-						
-						
-						
-					                                </sap.ui.layout.form:FormElement>
-						
-						
-						
-						
-					                                </sap.ui.layout.form:formElements>
-						
-						
-						
-						
-					                            
-						
-						
-						
-						
-					                        </sap.ui.layout.form:FormContainer>
-						
-						
-						
-						
-					                        
-						
-						
-						
-						
-					                    </sap.ui.layout.form:formContainers>
-						
-						
-						
-						
-					                    <sap.ui.layout.form:layout>
-						
-						
-						
-						
-					                        <sap.ui.layout.form:ResponsiveGridLayout id="layout0_copy"/>
-						
-						
-						
-						
-					                        
-						
-						
-						
-						
-					                    </sap.ui.layout.form:layout>
-						
-						
-						
-						
-					                    </sap.ui.layout.form:Form>
-						
-						
-						
-						
-					                <Toolbar width="100%" id="toolbar2_1582551181483">
-						
-						
-						
-						
-					                    <content>
-						
-						
-						
-						
-						
-						
-						
-					                        
-						
-						
-						
-						
-					                    </content>
-						
-						
-						
-						
-					                    
-						
-						
-						
-						
-					                </Toolbar>
-						
-						
-						
-						
-					                </content>
-						
-						
+					        <content/>
 						
 						
 					            
