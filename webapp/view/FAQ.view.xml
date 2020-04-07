@@ -312,38 +312,6 @@
 						
 						
 						
-					                        <FlexBox width="100%" id="box0_1582551913223" alignItems="Center" justifyContent="Center">
-						
-						
-						
-						
-					                            <items>
-						
-						
-						
-						
-					                                <Button xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Previous" id="button0_copy2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'MainPage'\}\}\}" icon="sap-icon://nav-back"/>
-						
-						
-						
-						
-					                                <Button xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Next" id="button1_copy2" press="onToStreetAddress" icon="sap-icon://navigation-right-arrow" iconFirst="false"/>
-						
-						
-						
-						
-					                                </items>
-						
-						
-						
-						
-					                            
-						
-						
-						
-						
-					                        </FlexBox>
-						
 						
 						
 						
