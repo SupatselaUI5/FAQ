@@ -4,113 +4,28 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						
-						
-						
-						
-					<ObjectHeader xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" title="NPO FAQ" id="header0" icon="pictures/icon.jpg">
-						
-						
-						
-						
-					    <statuses>
-						
-						
-						
-						
-					        </statuses>
-						
-						
-						
-						
-					    <attributes>
-						
-						
-						
-						
-						
-						
-						
-						
-					        
-						
-						
-						
-						
-					    </attributes>
-						
-						
-						
-						
-					    </ObjectHeader>
-						
-						
-						
-						
-					<IconTabBar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" selectedKey="adminKey" id="bar0">
-						
-  			
-						
-					    <items>
-						
-
-						
-						
-					        <IconTabFilter text="Questions and Answers" icon="sap-icon://task" iconColor="Critical" id="filter1" key="adminKey" content="{/GetQuestionnaireHSet}">
-					        	
-			
-	
-							
-	
-						<List noDataText="Drop list items here" id="list1" items="{path:'/GetQuestionnaireHSet',parameters:{expand:'ProblemToSolutionNav',select:'Problem'}}" sticky="ColumnHeaders">
-						
-						    <items>
-						
-<CustomListItem>
-                <Panel expandable="true" expanded="false" headerText="{Problem}" height="10%">
-                  <content>
-                    <Text text="Solution To Problem"/>
-                  </content>
-                </Panel>
-              </CustomListItem>
-						    </items>
-						
-						</List>
-						
-						
-					            
-						
-						
-						
-						
-					        <content/>
-						
-						
-					            
-						
-						
-						
-						
-					        </IconTabFilter>
-						
-						
-						
-						
-					        </items>
-						
-						
-						
-						
-					    
-						
-						
-						
-						
-					</IconTabBar>
-						
-						
-						
-						
+						<ObjectHeader xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" title="NPO FAQ" id="header0" icon="pictures/icon.jpg">
+							<statuses/>
+							<attributes/>
+						</ObjectHeader>
+						<IconTabBar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" selectedKey="adminKey" id="bar0">
+							<items>
+								<IconTabFilter text="Questions and Answers" icon="sap-icon://task" iconColor="Critical" id="filter1" key="adminKey" content="{/GetQuestionnaireHSet}">
+									<List noDataText="Drop list items here" id="list1" items="{path:'/GetQuestionnaireHSet',parameters:{expand:'ProblemToSolutionNav',select:'Problem'}}" sticky="ColumnHeaders">
+										<items>
+											<CustomListItem>
+												<Panel expandable="true" expanded="true" headerText="{Problem}" height="10%">
+													<content>
+														<Text text="Solution"/>
+													</content>
+												</Panel>
+											</CustomListItem>
+										</items>
+									</List>
+									<content/>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
 					</content>
 				</Page>
 			</pages>
