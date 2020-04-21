@@ -13,10 +13,10 @@
 								<IconTabFilter text="Questions and Answers" icon="sap-icon://task" iconColor="Critical" id="filter1" key="adminKey" content="{/GetQuestionnaireHSet}">
 									<List noDataText="Drop list items here" id="list1" items="{path:'/GetQuestionnaireHSet',parameters:{expand:'ProblemToSolutionNav',select:'Problem'}}" sticky="ColumnHeaders">
 										<items>
-											<CustomListItem>
-												<Panel expandable="true" expanded="true" headerText="{Problem}" height="10%">
+											<CustomListItem content="{/GetQuestionnaireHSet}">
+												<Panel expandable="true" expanded="true" height="10%" headerText="{ProblemS}">
 													<content>
-														<Text text="Solution"/>
+														<Text text="{path:'SolutionS',formatter:'.formatterSolution'}" id="SolutionS" renderWhitespace="true" maxLines="0" />
 													</content>
 												</Panel>
 											</CustomListItem>
