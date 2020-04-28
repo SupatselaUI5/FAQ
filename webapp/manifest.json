@@ -70,20 +70,18 @@
 				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
 					"defaultOperationMode": "Server",
-					"defaultBindingMode": "TwoWay",
+					"defaultBindingMode": "OneWay",
 					"defaultCountMode": "Request",
-					"useBatch": true
+					"useBatch": false
 				},
 				"dataSource": "ZDSD_CRM_UI5_APP_SRV",
 				"preload": true
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -95,15 +93,11 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "TargetFAQ",
-					"pattern": "RouteFAQ",
-					"target": [
-						"TargetFAQ"
-					]
-				}
-			],
+			"routes": [{
+				"name": "TargetFAQ",
+				"pattern": "RouteFAQ",
+				"target": ["TargetFAQ"]
+			}],
 			"targets": {
 				"TargetFAQ": {
 					"viewType": "XML",
