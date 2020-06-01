@@ -79,9 +79,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -93,11 +95,15 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "TargetFAQ",
-				"pattern": "RouteFAQ",
-				"target": ["TargetFAQ"]
-			}],
+			"routes": [
+				{
+					"name": "TargetFAQ",
+					"pattern": "RouteFAQ",
+					"target": [
+						"TargetFAQ"
+					]
+				}
+			],
 			"targets": {
 				"TargetFAQ": {
 					"viewType": "XML",

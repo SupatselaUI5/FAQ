@@ -11,12 +11,20 @@
 						<IconTabBar xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" selectedKey="adminKey" id="bar0">
 							<items>
 								<IconTabFilter text="Questions and Answers" icon="sap-icon://task" iconColor="Critical" id="filter1" key="adminKey" content="{/GetQuestionnaireHSet}">
-									<List noDataText="Drop list items here" id="list1" items="{path:'/GetQuestionnaireHSet',parameters:{expand:'ProblemToSolutionNav',select:'Problem'}}" sticky="ColumnHeaders">
+									<List noDataText="Drop list items here" id="list1" sticky="ColumnHeaders">
 										<items>
-											<CustomListItem >
+											<CustomListItem>
 												<Panel expandable="true" expanded="true" height="10%" headerText="{ProblemS}">
 													<content>
-														<Text text="{path:'SolutionS',formatter:'.formatterSolution'}" id="SolutionS" renderWhitespace="true"  />
+														<Text text="{path:'SolutionS',formatter:'.formatterSolution'}" id="SolutionS" renderWhitespace="true"/>
+														<HBox xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" width="100%" id="hbox0" cd:w5g.dt.context="/GetQuestionnaireHSet">
+														    <items>
+														        <Link id="LinkS" xmlns="sap.m" href="http://www.npo.gov.za/PublicNpo/WebApplicationCase/Register" text="{path:'SolutionS',formatter:'.formatterLinkS'}"/>
+														        <Link id="LinkM" xmlns="sap.m" href="http://www.npo.gov.za" text="{path:'SolutionS',formatter:'.formatterLinkM'}"/>
+														        <Link id="LinkG" xmlns="sap.m" href="https://www.gauteng.gov.za/" text="{path:'SolutionS',formatter:'.formatterLinkG'}"/>
+														    </items>
+														</HBox>
+														
 													</content>
 												</Panel>
 											</CustomListItem>
