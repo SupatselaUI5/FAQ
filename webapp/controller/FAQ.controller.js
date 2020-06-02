@@ -17,11 +17,14 @@ formatterSolution: function (SolutionS) {
     	
     	if(array[12]===" • http://www.npo.gov.za/PublicNpo/WebApplicationCase/Register " || array[2]===" • http://www.npo.gov.za " || array[8]===" • https://www.gauteng.gov.za/ ") 
     	{
+    		if(i>=2){
     			solution += array[i-2] + "\n" ;
-    	}
+    		}
+    		}
+    			
+    		
     	else
     	solution += array[i] + "\n" ;
-    	
     }
  return solution;
 },
